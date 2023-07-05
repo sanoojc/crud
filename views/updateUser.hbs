@@ -1,0 +1,28 @@
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center login-main">
+    <form class="login-container2" method="post" action="/admin/update-user">
+    <h2>Update User</h2>
+
+    {{!-- id hidden cheythu vekkan id is getting from the adminhome page because its a button edit pAGE --}}
+        <input class="form-control login-input" style="visibility: hidden; height:0px" type="text" value={{_id}} name="_id" aria-label="default input example">
+
+        <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input class="form-control login-input" type="text" name="name" value='{{name}}'>
+            {{!-- value name kodukkunnath place holderil aah fieldil name veran --}}
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control login-input" id="exampleInputEmail1" value={{email}} name="email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputMobile" class="form-label">Mobile</label>
+            <input type="number" class="form-control login-input" value={{mobile}}  name="mobile" >
+        </div>
+        {{#if error}}
+        <div class="mb-3">
+           <b class="error-text">Something went Wrong</b>
+        </div>
+        {{/if}}
+        <button type="submit" class="btn custom-btn  login-btn-signup">Update</button>
+    </form>
+</div>

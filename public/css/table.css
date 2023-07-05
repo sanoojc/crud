@@ -1,0 +1,162 @@
+.table-main{
+    width: 100vw;
+    min-height: 100vh;
+    
+}
+.navbar{
+    height: 60px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+
+
+.table-container{
+    background-image: url('../image/bg9.jpeg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    backdrop-filter: blur(20px);
+    opacity: 90%;
+}
+.table-container table{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.table-container tr td, .table-container tr th{
+    padding: 10px;
+    padding-left: 20px;
+}
+.search::placeholder{
+    color: grey;
+}
+
+.table-container thead tr th{
+    padding: 20px;
+}
+body{
+   margin: 0;
+   padding: 0;
+}
+@media screen and (max-width:600px) {
+    .table-container tr td, .table-container tr th{
+        font-size: .8rem;
+    }
+    .table-container button, .table-container a{
+        font-size: .8rem;
+        padding: 3px;
+    }
+}
+
+.userhome{
+    background-image:url('../image/bg5.jpeg') ;
+  
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    backdrop-filter: blur(20px);
+    
+   
+    height: 100vh;
+}
+
+.userhome h1{
+    text-transform: capitalize;
+    
+    
+    font-size: 3.5rem;
+    line-height: 80%;
+   transform: rotateX(0) rotateY(-25deg);
+    text-transform: uppercase;
+    width: 500px;
+ text-align: center;
+    color: #b9dfff;
+    color: #fff;
+    font-family: "Zefani";
+ font-family: 'Abril Fatface';
+}
+
+
+.userhome .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .userhome .btn-1 {
+    background: rgb(131, 6, 6);
+    background: linear-gradient(0deg, rgb(131, 6, 6) 0%, rgb(180, 12, 12) 100%);
+    border: none;
+  }
+ .userhome .btn-1:hover {
+     background: rgb(255, 0, 0);
+  background: linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(251, 2, 2) 100%);
+  }
+
+  .userhome span{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+   
+      
+  .table-main .tablecolor{
+    border-radius: 20px;
+
+    color: white;
+    
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px 0px rgba(56, 56, 56, 0.435);
+
+  }
+     
+  .error-text{
+    color: #ad4d2c;
+  }
+.table-main .editbtn{
+    background: rgb(50, 149, 243); color: white; font-weight: 300;
+    transition: 0.1s ease-in;
+}
+.table-main .editbtn:hover{
+    background-color: rgb(0, 30, 57);
+}
+.table-main .deletebtn{
+    background: rgb(255, 39, 39); color: white; font-weight: 300;
+    transition: 0.1s ease-in;
+}
+
+.table-main .deletebtn:hover{
+    background-color: rgb(129, 0, 0);
+}

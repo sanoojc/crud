@@ -1,0 +1,28 @@
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center login-main">
+    <form class="login-container2" method="post" action="/admin/create-user">
+    <h2>Create User</h2>
+        <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input class="form-control login-input" type="text" name="name" aria-label="default input example">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control login-input" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputMobile" class="form-label">Mobile</label>
+            <input type="number" class="form-control login-input"  name="mobile" >
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control login-input" name="password" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            {{#if error}}
+            <b class=" error-text">{{message}}</b>
+            {{/if}}
+        </div>
+        <button type="submit" class="btn  custom-btn  login-btn-signup">Submit</button>
+    </form>
+
+</div>
